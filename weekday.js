@@ -1,30 +1,47 @@
-// step1:Figure out the function
-// Step 2: Label the function
-// step 3: label the variables
-// step 4:console.log
 
+function getDay() {
+    var Day;
 
+    switch (new Date().getDay()){
 
+    case 0 : 
+    Day = "Sunday" ;
+    console.log("Today is Sunday");
+    break;
 
-// var d = new Date();
-// var n = d.getDay();
+    case 1 :
+    Day = "Monday" ;
+    console.log("Today is Monday");
+    break;
 
+    case 2 :
+    Day = "Tuesday";
+    console.log("Tuesday");
+    break;
 
-switch(Day){
-case 0:
-console.log(“You’re finally an adult!!”);
-break;
-case 1:
-console.log(“You can finally by a drink!!”);
-break;
-default:
-console.log(“You’re age is insignificant”);
+    case 3 :
+    Day = "Wednesday";
+    console.log("Wednesday");
+    break;
 
+    case 4 : 
+    Day = "Thursday";
+    console.log("Thursday");
+    break;
 
-  console.log(“You’re finally an adult!!”);
-break;
-case 1:
-console.log(“You can finally by a drink!!”);
-break;
-default:
-console.log(“You’re age is insignificant”);
+    case 5 :
+    Day = "Friday";
+    console.log("Friday");
+    break;
+
+    case 6 :
+    Day = "Saturday";
+    console.log("Saturday");
+    break;
+
+    };
+    document.getElementById("display").innerHTML = "Today is" + Day;
+    
+    console.log("Button was cliciked");
+}
+    
